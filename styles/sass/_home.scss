@@ -31,6 +31,7 @@ section {
   display: flex;
   flex-direction: column;
   padding: 0 40px;
+  padding-top:40px;
   p {
     max-width: 300px;
   }
@@ -38,7 +39,7 @@ section {
 
 .contact {
   grid-area: contact;
-  margin-top: 20px;
+  margin: 30px 0;
 }
 
 h2 {
@@ -68,6 +69,7 @@ h2 {
     justify-content: space-around;
   }
   .contact {
+    margin: 0;
     align-items: flex-end;
     text-align: end;
     padding: 40px;

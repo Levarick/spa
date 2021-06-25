@@ -122,6 +122,7 @@ section p {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 40px;
+  padding-top: 40px;
 }
 .masages p {
   max-width: 300px;
@@ -131,7 +132,7 @@ section p {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: contact;
-  margin-top: 20px;
+  margin: 30px 0;
 }
 
 h2 {
@@ -166,6 +167,7 @@ h2:hover {
   }
 
   .contact {
+    margin: 0;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
