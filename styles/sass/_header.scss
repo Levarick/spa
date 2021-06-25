@@ -1,0 +1,32 @@
+header {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: $transparent-background-color;
+}
+
+header ul {
+  visibility: hidden;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  li a {
+    margin-right: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 0.8;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width:600px) {
+  header ul {
+    visibility: initial;
+  }
+}

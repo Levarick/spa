@@ -1,0 +1,87 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "title" "types" "contact";
+  background-color: $transparent-background-color;
+}
+
+section {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  p {
+    line-height: 2.2rem;
+  }
+}
+
+.description {
+  background-color: rgba($color: #FFFF, $alpha: 0.2);
+  grid-area: title;
+  padding: 40px;
+  h1 {
+    margin-bottom: 20px;
+  }
+  img {
+    width: 90%;
+  }
+}
+
+.masages {
+  grid-area: types;
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  p {
+    max-width: 300px;
+  }
+}
+
+.contact {
+  grid-area: contact;
+  margin-top: 20px;
+}
+
+h2 {
+  cursor: pointer;
+  margin: 10px 0;
+  display: inline-block;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
+}
+.masages__card {
+  display: none ;
+  padding: 40px;
+  padding-top: 0;
+  p:nth-of-type(1) {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 800px) {
+  .masages {
+    align-items: flex-start;
+    text-align: start;
+    justify-content: space-around;
+  }
+  .contact {
+    align-items: flex-end;
+    text-align: end;
+    padding: 40px;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+
+  main {
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto ;
+    grid-template-areas: "types types title" "contact contact title";
+  }
+}
